@@ -1,9 +1,11 @@
 // TODO: Fix the compiler error on this function.
-fn picky_eater(food: &str) -> &str {
+fn picky_eater(food: &str) -> String {
     if food == "strawberry" {
-        "Yummy!"
+        "Yummy!".to_string()
+    } else if food == "potato" {
+        "I guess I can eat that.".to_string()
     } else {
-        1
+        "No thanks!".to_string()
     }
 }
 
